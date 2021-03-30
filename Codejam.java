@@ -40,10 +40,6 @@ public class Codejam {
                 }
             }
             count = count + Math.abs(j+1-i);
-            /*int chk=Reverse(arr,j);
-            if(chk==0 && j+1<arr.length){
-                j++;
-            }*/
             Reverse(arr,i,j);
         }
         return count;
@@ -59,17 +55,4 @@ public class Codejam {
             j--;
         }
     }    
-        /*for(int n=0;n<j;n++){
-             for(int i=j;i>n;i--){
-                 if(arr[i-1]>arr[i]){
-                    temp=arr[i];
-                    arr[i]=arr[i-1];
-                    arr[i-1]=temp;
-                 }
-            }
-        }
-        /*if(count==0){
-            return 0;
-        }
-        return 1;*/
 }
